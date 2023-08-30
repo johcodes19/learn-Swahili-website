@@ -1,0 +1,221 @@
+I'll try to write some code for that. Here is a possible HTML and CSS code for a Swahili learning website login and sign up page where learners can login or sign up with Google, Facebook and email. You can modify it according to your needs.
+
+```html
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Style the header */
+.header {
+  background-color: #4CAF50;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #3a8c40;
+}
+
+/* Style the main content */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the login form */
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+.form-header {
+  background-color: #4CAF50;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  padding: 15px;
+}
+
+.form-content {
+  padding: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+.form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.form-button:hover {
+   background-color:#3a8c40; 
+}
+
+.form-footer {
+   display:flex; 
+   align-items:center; 
+   justify-content:center; 
+   margin-top:15px; 
+}
+
+.social-icon {
+   width:40px; 
+   height:40px; 
+   margin-right:10px; 
+   border-radius:50%; 
+   box-shadow:
+    inset -1.5em -1.5em #4CAF50,
+    inset -1.6em -1.6em white,
+    inset -2.5em -2.5em #4CAF50,
+    inset -2.6em -2.6em white,
+    inset -3.5em -3.5em #4CAF50,
+    inset -3.6em -3.6em white,
+    inset -4.5em -4.5em #4CAF50,
+    inset -4.6em -4.6em white,
+    inset -5.5em -5.5em #4CAF50,
+    inset -5.6em -5.6em white,
+    inset -6.5em -6.5em #4CAF50,
+    inset -6.6em -6.6em white,
+    inset -7.5em -7.5em #4CAF50,
+    inset -7.6em -7.6em white,
+    inset -8.5em -8.5em #4CAF50,
+    inset -8.6em -8.6em white,
+    inset -9.5em -9.5em #4CAF50,
+    inset -9.6em -9.6em white,
+    inset -10.5em -10.5em #4CAF50,
+    inset -10.6em -10.6em white
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>Jifunze Kiswahili</h1>
+<p>Learn Swahili online with fun and interactive lessons.</p>
+</div>
+
+<div class="navbar">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</div>
+
+<div class="main">
+<div class="form-container">
+<div class="form-header">
+<h2>Login or Sign Up</h2>
+</div>
+<div class="form-content">
+<form action="/action_page.php" method="post">
+  <div class="form-group">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" id="email" name="email" class="form-input" required>
+  </div>
+  <div class="form-group">
+    <label for="password" class="form-label">Password:</label>
+    <input type="password" id="password" name="password" class="form-input" required>
+  </div>
+  <div class="form-group">
+    <input type="submit" value="Login" class="form-button">
+  </div>
+</form>
+<p>Or sign up with:</p>
+<div class="form-footer">
+  <a href="#"><img src="google-icon.png" alt="Google" class="social-icon"></a>
+  <a href="#"><img src="facebook-icon.png" alt="Facebook" class="social-icon"></a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KnowSwahili Language Learning Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<h1>CONTACT US</h1>
+  <form id="contactForm">
+    <label for="name">Name: </label>
+    <input type="text" id="name" required><br><br>
+    <label for="email">Email: </label>
+    <input type="text" id="email" required><br><br>
+    <label for="message">Message: </label><br>
+    <textarea id="message" cols="50" rows="4" required></textarea><br>
+    <button type="submit">Chat with instructors</button>
+
+  </form>
+
+  <div id="notification"></div>
+  <hr>
+  <footer>
+    <p>&copy; 2023 KnowSwahili language Learning Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
